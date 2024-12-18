@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",           // Set base URL to the `src` folder
+    "paths": {
+      "@/*": ["*"]                // Map `@` to the `src/` folder
+    },
+    "esModuleInterop": true,      // For better compatibility with CommonJS modules
+    "skipLibCheck": true,         // Skip type checking of declaration files
+    "strict": true                // Enable strict mode (optional but recommended)
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
