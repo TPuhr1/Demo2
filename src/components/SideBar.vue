@@ -68,10 +68,8 @@ aside {
     min-height: 100vh;
     overflow: hidden;
     padding: 1rem;
-
     background-color: var(--dark);
     color: var(--light);
-
     transition: 0.2s ease-out;
 
     .flex {
@@ -117,7 +115,6 @@ aside {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 1rem;
-
         position: relative;
         top: 0;
         transition: 0.2s ease-out;
@@ -159,7 +156,6 @@ aside {
             display: flex;
             align-items: center;
             text-decoration: none;
-
             padding: 0.5rem 1rem;
             transition: 0.2s ease-out;
 
