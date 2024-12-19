@@ -6,9 +6,5 @@
 </template>
 
 <style>
-.h1 {
-    font-size: 35px;
-    font-display: bold;
-}
 
 </style>

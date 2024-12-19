@@ -2,15 +2,16 @@
 import { RouterView } from 'vue-router'
 import SideBar from './components/SideBar.vue'
 </script>
-
+<!-- Template for this page  -->
 <template>
   <div class="app">
     <SideBar />
     <router-view />
   </div>
 </template>
-
+<!-- Styling for the app -->
 <style lang="scss">
+// Creating variables I can use throughout the app
 :root {
   --primary: #4ade80;
   --grey: #64748b;

@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
+// Defines the routs for my router
 const routes = [
     {path: '/', name: 'home', component: () => import('@/views/Home.vue')},
     {path: '/about', name: 'about', component: () => import('@/views/About.vue')},
@@ -8,10 +8,10 @@ const routes = [
     {path: '/contact', name: 'contact', component: () => import('@/views/Contact.vue')},
     {path: '/settings', name: 'settings', component: () => import('@/views/Settings.vue')},
 ]
-
+// Creates a router instance
 const router = createRouter({
-    routes,
-    history: createWebHistory(),
+    routes,                         // Routes for the router instance
+    history: createWebHistory(),    // Enables history
 })
-
+// Exports the router
 export default router

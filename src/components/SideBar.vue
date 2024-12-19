@@ -1,16 +1,17 @@
 <script setup>
 import { ref } from 'vue'
-
+// Creating a variable to hold the true/false value of is_expanded from local storage
 const is_expanded = ref(localStorage.getItem("is_expanded") === "true")
-
+// This toggles the is_expanded value from true <-> false
 const ToggleMenu = () => {
     is_expanded.value = !is_expanded.value
-
+    // Then saves the change to local storage
     localStorage.setItem("is_expanded", is_expanded.value)
 }
 </script>
-
+<!-- Template for my page layout -->
 <template>
+    <!-- Aside is the sidebar element and is_expanded is applied if the value is true -->
   <aside :class="`${is_expanded && 'is-expanded'}`">
     <div class="logo">
         <img src="../assets/monogram-hq.png" alt="Puhr Sports">
@@ -18,10 +19,11 @@ const ToggleMenu = () => {
 
     <div class="menu-toggle-wrap">
         <button class="menu-toggle">
+            <!-- On click the arrows toggle the sidebar in or out -->
             <span class="material-icons" @click="ToggleMenu">keyboard_double_arrow_right</span>
         </button>
     </div>
-
+    <!-- My menu options on the sidebar -->
     <h3>Menu</h3>
     <div class="menu">
         <router-link class="button" to="/">
@@ -45,7 +47,7 @@ const ToggleMenu = () => {
             <span class="text">Contact</span>
         </router-link>
     </div>
-
+    <!-- This is added  to move the last option Setting to the bottom of the sidebar -->
     <div class="flex"></div>
 
     <div class="menu">
@@ -57,7 +59,7 @@ const ToggleMenu = () => {
 
   </aside>
 </template>
-
+<!-- Styling for my sidebar -->
 <style lang="scss" scoped>
 aside {
     display: flex;

@@ -59,7 +59,7 @@ const ResetGame = () => {
     player.value = 'X'
 }
 </script>
-
+<!-- Page template with the styling in the template -->
 <template>
   <main class="pt-8 text-center bg-rgb-241-245-249 min-h-screen text-black">
     <h1 calss="mb-8 text-3xl font-bold uppercase">Tic Tac Toe</h1>
